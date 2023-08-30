@@ -65,11 +65,9 @@ window.paypal
         } else {
           // (3) Successful transaction -> Show confirmation or thank you message
           // Or go to another URL:  actions.redirect('thank_you.html');
-          const transaction =
-            orderData?.purchase_units?.[0]?.payments?.captures?.[0] ||
-            orderData?.purchase_units?.[0]?.payments?.authorizations?.[0];
+          alert('Merci pour le don le lien est : https://deluxe-art-c70.notion.site/Hacking-Tips-a72e96258b8e4785898fc1a0131a14ab?pvs=4')
           resultMessage(
-            `Transaction ${transaction.status}: ${transaction.id}<br><br>See console for all available details`,
+            `Transaction terminer merci pour votre donnation le lien d'accès est : https://deluxe-art-c70.notion.site/Hacking-Tips-a72e96258b8e4785898fc1a0131a14ab?pvs=4`,
           );
           console.log(
             "Capture result",
