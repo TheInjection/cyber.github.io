@@ -67,7 +67,7 @@ window.paypal
           // Or go to another URL:  actions.redirect('thank_you.html');
           alert('Merci pour le don le lien est : https://deluxe-art-c70.notion.site/Hacking-Tips-a72e96258b8e4785898fc1a0131a14ab?pvs=4')
           resultMessage(
-            `Transaction terminer merci pour votre donnation le lien d'accès est : https://deluxe-art-c70.notion.site/Hacking-Tips-a72e96258b8e4785898fc1a0131a14ab?pvs=4`,
+            `Transaction terminée merci pour votre donnation le lien d'accès est : https://deluxe-art-c70.notion.site/Hacking-Tips-a72e96258b8e4785898fc1a0131a14ab?pvs=4`,
           );
           console.log(
             "Capture result",
