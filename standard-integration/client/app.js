@@ -68,9 +68,8 @@ window.paypal
           const transaction =
             orderData?.purchase_units?.[0]?.payments?.captures?.[0] ||
             orderData?.purchase_units?.[0]?.payments?.authorizations?.[0];
-          alert("Merci pour votre payment le lien d'accès est : https://deluxe-art-c70.notion.site/Hacking-Tips-aba95f7a55fc4730bb8b77e216046702?pvs=4")
           resultMessage(
-            `<h1>Merci pour votre payment le lien d'accès est : https://deluxe-art-c70.notion.site/Hacking-Tips-aba95f7a55fc4730bb8b77e216046702?pvs=4</h1>`,
+            `Transaction ${transaction.status}: ${transaction.id}<br><br>See console for all available details`,
           );
           console.log(
             "Capture result",
